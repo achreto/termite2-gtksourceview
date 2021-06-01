@@ -40,7 +40,7 @@ Source-Repository head
 
 custom-setup
   setup-depends: base >= 4.6,
-                 Cabal >= 1.24 && < 1.25,
+                 Cabal,
                  gtk2hs-buildtools >= 0.13.1.0 && < 0.14
 
 Library
@@ -87,4 +87,4 @@ Library
         x-c2hs-Header:     gtksourceview2.h
         pkgconfig-depends: gtksourceview-2.0 >= 2.0.2
         x-Types-Hierarchy: hierarchy.list
-        build-depends:     gtk >=0.14.3 && <0.15
+        build-depends:     gtk >=0.14.3
